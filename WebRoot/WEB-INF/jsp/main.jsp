@@ -53,15 +53,15 @@
 								    <td>${row.stu_address}</td>
 								    <td>${row.stu_createtime}</td>
 									<td>
-										<a href="#" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#customerEditDialog" onclick= "editCustomer(${row.stu_id})">修改</a>
-										<a href="#" class="btn btn-danger btn-xs" onclick="deleteCustomer(${row.stu_id})">删除</a>
+										<a href="#" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#StudentEditDialog" onclick= "editStudent(${row.stu_id})">修改</a>
+										<a href="#" class="btn btn-danger btn-xs" onclick="deleteStudent(${row.stu_id})">删除</a>
 									</td>
 								</tr>
 							</c:forEach>
 						</tbody>
 					</table>
 					<div class="col-md-12 text-right">
-						<itheima:page url="${pageContext.request.contextPath }/customer/list.action" />
+						<itheima:page url="${pageContext.request.contextPath }/student/list.action" />
 					</div>
 		<!-- /.panel-body -->
 </body>
