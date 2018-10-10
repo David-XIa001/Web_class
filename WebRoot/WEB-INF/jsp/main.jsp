@@ -64,5 +64,7 @@
 						<itheima:page url="${pageContext.request.contextPath }/student/list.action" />
 					</div>
 		<!-- /.panel-body -->
+
+<script src="<%=basePath%>js/mian.js"></script>
 </body>
 </html>
