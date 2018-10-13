@@ -4,7 +4,7 @@
 <%@ page trimDirectiveWhitespaces="true"%>
 <!-- 引入标准标签库 -->
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ taglib prefix="itheima" uri="http://itheima.com/common/"%>
+<%-- <%@ taglib prefix="itheima" uri="http://itheima.com/common/"%> --%>
 <%
 	/* request.getContextPath()拿到的是你的web项目的根路径，就是webContent(MyEclipse中是webRoot)。 */
 	String path = request.getContextPath();
