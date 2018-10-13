@@ -29,6 +29,8 @@
 					<table class="table table-bordered table-striped">
 						<thead>
 							<tr>
+								<th><input type="checkbox" name="allChoice id="allChoice">全选</th>
+								
 								<th>学号</th>
 								<th>姓名</th>
 								<th>学校</th>
@@ -43,6 +45,8 @@
 						<tbody>
 							<c:forEach items="${page.rows}" var="row">
 								<tr>
+									<td><input type="checkbox" name="choice" id="choice"></td>
+									
 									<td>${row.stu_id}</td>
 									<td>${row.stu_name}</td>
 									<td>${row.stut_school}</td>

@@ -34,3 +34,6 @@ $(function() {
         element.addClass('active');
     }
 });
+
+//全选的checkbox的事件
+
