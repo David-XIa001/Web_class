@@ -34,23 +34,76 @@
 						</div>
 						<!-- form-group has-feedback end -->
 						<div class="row">
-							<div class="col-xs-12">
+							<div class="col-xs-6">
 								<button type="submit" class="btn btn-danger btn-block btn-flat">登
 									录</button>
 							</div>
+							<div class="col-xs-6">
+                                <button type="button" class="btn btn-danger btn-block btn-flat" data-toggle="modal"
+                                    data-target="#myModal" value="注册">注册
+                                </button>
+                            </div>
 						</div>
 						<!-- row end -->
 					</form>
 					<br>
 					<p class="text-right">
-						<a href="#">忘记密码?</a><a href="#" class="text-center">注册账号</a>
+						<a href="#">忘记密码?</a>
 					</p>
 				</div>
 			</div>
 		</div>
 		<!-- container end -->
 	</div>
+	<!-- particles-js -->
+	 <!-- 注册模块框 -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <!-- 模块框标题 -->
+        <div class="modal-dialog">
+            <!-- form开始 -->
+            <form action="">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            &times;
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel">
+                            注册
+                        </h4>
+                    </div>
+                    <!-- 模块框身体 -->
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="name">注册用户名</label>
+                            <input type="text" class="form-control" id="name" placeholder="">
+                        </div>
+                        <div class="form-group">
+                                <label for="name">密码</label>
+                                <input type="password" class="form-control" id="name" placeholder="注册密码">
+                        </div>
+                        <div class="form-group">
+                                <label for="name">确认密码</label>
+                                <input type="password" class="form-control" id="name" placeholder="请重复输入密码">
+                        </div>
+
+                    </div>
+                    <!-- 模块框尾部 -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            确认
+                        </button>
+                    </div>
+                </div> <!-- /.modal-content -->
+            </form>
+
+        </div>
+    </div>
+    <!-- modal fade end -->
 	<!-- scripts -->
+	 <script src="${pageContext.request.contextPath}/js/jquery-2.1.0.min.js"></script>
+    <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
 	<script src="${pageContext.request.contextPath}/js/particles.js"></script>
 	<script src="${pageContext.request.contextPath}/js/app.js"></script>
 	<script>
