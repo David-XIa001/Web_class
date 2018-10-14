@@ -1,8 +1,8 @@
-$(function() {
+/*$(function() {
 
     $('#side-menu').metisMenu();
 
-});
+});*/
 
 //Loads the correct sidebar on window load,
 //collapses the sidebar on window resize.
@@ -35,5 +35,10 @@ $(function() {
     }
 });
 
-//全选的checkbox的事件
-
+$("#allChoice").change(function() { 
+  　　var op = document.getElementsByName("choice");
+      for(i = 0;i < op.length;i++)
+      {
+          op[i].checked = this.checked;
+      }
+  });

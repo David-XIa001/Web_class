@@ -4,7 +4,7 @@
 <%@ page trimDirectiveWhitespaces="true"%>
 <!-- 引入标准标签库 -->
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ taglib prefix="simple" uri="http://itheima.com/common/"%>
+<%@ taglib prefix="simple" uri="http://simple.com/common/"%>
 <%
 	/* request.getContextPath()拿到的是你的web项目的根路径，就是webContent(MyEclipse中是webRoot)。 */
 	String path = request.getContextPath();
@@ -20,6 +20,12 @@
 	<!-- 引入css样式文件 -->
 	<!-- Bootstrap Core CSS -->
 	<link href="<%=basePath%>css/bootstrap.min.css" rel="stylesheet" />
+	<link href="<%=basePath%>css/main.css" rel="stylesheet" />
+	<style>
+		table>tbody>tr:hover{
+   background-color:palevioletred;
+}
+	</style>
 </head>
 <body>
 		 	<!-- 导航部分 -->
@@ -79,11 +85,10 @@
 		 <div class="panel panel-default">
 					<div class="panel-heading">学生信息列表</div>
 					<!-- /.panel-heading -->
-					<table class="table table-bordered table-striped">
+					<table class="table table-bordered" >
 						<thead>
 							<tr>
-								<th><input type="checkbox" name="allChoice id="allChoice">全选</th>
-								
+								<th><input type="checkbox" name="allChoice" id="allChoice">全选</th>
 								<th>学号</th>
 								<th>姓名</th>
 								<th>学校</th>
@@ -99,7 +104,6 @@
 							<c:forEach items="${page.rows}" var="row">
 								<tr>
 									<td><input type="checkbox" name="choice" id="choice"></td>
-									
 									<td>${row.stu_id}</td>
 									<td>${row.stu_name}</td>
 									<td>${row.stut_school}</td>
@@ -125,6 +129,6 @@
 		<script src="<%=basePath%>/js/jquery-2.1.0.min.js"></script>
 		<script src="<%=basePath%>/lib/bootstrap/js/bootstrap.min.js"></script>
 		<script src="<%=basePath%>/js/main.js"></script>
-		<script src="<%=basePath%>js/mian.js"></script>
+		<script src="<%=basePath%>js/main.js"></script>
 </body>
 </html>
