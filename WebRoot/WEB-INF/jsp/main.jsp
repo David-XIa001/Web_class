@@ -4,7 +4,7 @@
 <%@ page trimDirectiveWhitespaces="true"%>
 <!-- 引入标准标签库 -->
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%-- <%@ taglib prefix="itheima" uri="http://itheima.com/common/"%> --%>
+<%@ taglib prefix="simple" uri="http://itheima.com/common/"%>
 <%
 	/* request.getContextPath()拿到的是你的web项目的根路径，就是webContent(MyEclipse中是webRoot)。 */
 	String path = request.getContextPath();
@@ -22,7 +22,60 @@
 	<link href="<%=basePath%>css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
-		 <p> this main</p>
+		 	<!-- 导航部分 -->
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#"style="font-size:24px; padding-top:20px;color:#F08080">长琴的信息管理系统</a>
+			</div>
+			<div>
+				<ul class="nav navbar-nav" style="font-size:16px; padding-top: 5px;">
+					<li style="margin-left:200px;"><a href="#">班级成员</a></li>
+					<li><a href="#">我的文章</a></li>
+					<li><a href="#">我的相册</a></li>
+					<li><a href="#">留言</a></li>
+				</ul>
+			</div>
+			<!-- 搜索框 -->
+			<form class="navbar-form navbar-left" role="search" style="font-size:16px; padding-top: 5px;">
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Search" style=" margin-left:100px;width:300px;">
+				</div>
+				<button type="submit" class="btn btn-default">搜索</button>
+			</form>
+			
+
+			<!-- 搜索框结束 -->
+			<!-- 用户信息 -->
+			<div class="navbar-form navbar-right dropdown" style="margin-right:30px;">
+				<!-- <button type="button" class="btn dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">主题 -->
+				<!-- <span class="caret"></span> -->
+				<a href="" class="btn dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">
+					<img src="<%=basePath%>images/me.jpg" style="height:30px" class="img-circle">
+				</a>
+
+				<!-- </button> -->
+				<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+					<li role="presentation">
+						<a role="menuitem" tabindex="-1" href="#">我的消息</a>
+					</li>
+					<li role="presentation" class="divider"></li>
+					<li role="presentation">
+						<a role="menuitem" tabindex="-1" href="#">我的设置</a>
+					</li>
+					<li role="presentation" class="divider"></li>
+					<li role="presentation">
+						<a role="menuitem" tabindex="-1" href="#">退出登入</a>
+					</li>
+					<li role="presentation" class="divider"></li>
+				</ul>
+			</div>
+			<!-- 用户信息结束 -->
+		</div>
+		<!-- 导航容器结束 -->
+	</nav>
+	<!-- 导航栏结束 -->
+	<!-- 表格部分 -->
 		 <div class="panel panel-default">
 					<div class="panel-heading">学生信息列表</div>
 					<!-- /.panel-heading -->
@@ -65,10 +118,13 @@
 						</tbody>
 					</table>
 					<div class="col-md-12 text-right">
-						<itheima:page url="${pageContext.request.contextPath }/student/list.action" />
+						<simple:page url="${pageContext.request.contextPath }/student/list.action" />
 					</div>
 		<!-- /.panel-body -->
-
-<script src="<%=basePath%>js/mian.js"></script>
+<!-- script -->
+		<script src="<%=basePath%>/js/jquery-2.1.0.min.js"></script>
+		<script src="<%=basePath%>/lib/bootstrap/js/bootstrap.min.js"></script>
+		<script src="<%=basePath%>/js/main.js"></script>
+		<script src="<%=basePath%>js/mian.js"></script>
 </body>
 </html>
