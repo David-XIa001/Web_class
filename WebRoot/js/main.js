@@ -41,4 +41,5 @@ $("#allChoice").change(function() {
       {
           op[i].checked = this.checked;
       }
-  });
+  }
+);

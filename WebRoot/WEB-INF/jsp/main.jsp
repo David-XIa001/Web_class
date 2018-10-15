@@ -25,7 +25,7 @@
 		table>tbody>tr:hover{
    background-color:palevioletred;
 }
-	</style>
+</style>
 </head>
 <body>
 		 	<!-- 导航部分 -->
@@ -36,10 +36,10 @@
 			</div>
 			<div>
 				<ul class="nav navbar-nav" style="font-size:16px; padding-top: 5px;">
-					<li ><a href="#">班级成员</a></li>
-					<li><a href="#">我的文章</a></li>
-					<li><a href="#">我的相册</a></li>
-					<li><a href="#">留言</a></li>
+					<li ><a href="main.jsp">班级成员</a></li>
+					<li><a href="article.jsp">我的文章</a></li>
+					<li><a href="<%=basePath%>WEB_INF/jsp/photoAlbum.jsp">我的相册</a></li>
+					<li><a href="<%=basePath%>WEB_INF/jsp/leaveMessage.jsp">留言</a></li>
 				</ul>
 			</div>
 			<!-- 搜索框 -->
@@ -131,6 +131,6 @@
 		<script src="<%=basePath%>/js/jquery-2.1.0.min.js"></script>
 		<script src="<%=basePath%>/lib/bootstrap/js/bootstrap.min.js"></script>
 		<script src="<%=basePath%>/js/main.js"></script>
-		<script src="<%=basePath%>js/main.js"></script>
+		
 </body>
 </html>
