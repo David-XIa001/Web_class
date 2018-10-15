@@ -1,0 +1,2 @@
+10.15点击文章会出现  
+http://localhost:8080/Web_class/student/article.jsp
