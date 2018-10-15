@@ -36,7 +36,7 @@
 			</div>
 			<div>
 				<ul class="nav navbar-nav" style="font-size:16px; padding-top: 5px;">
-					<li style="margin-left:200px;"><a href="#">班级成员</a></li>
+					<li ><a href="#">班级成员</a></li>
 					<li><a href="#">我的文章</a></li>
 					<li><a href="#">我的相册</a></li>
 					<li><a href="#">留言</a></li>
@@ -45,7 +45,7 @@
 			<!-- 搜索框 -->
 			<form class="navbar-form navbar-left" role="search" style="font-size:16px; padding-top: 5px;">
 				<div class="form-group">
-					<input type="text" class="form-control" placeholder="Search" style=" margin-left:100px;width:300px;">
+					<input type="text" class="form-control" placeholder="Search" style="width:300px;">
 				</div>
 				<button type="submit" class="btn btn-default">搜索</button>
 			</form>
@@ -125,6 +125,8 @@
 						<simple:page url="${pageContext.request.contextPath }/student/list.action" />
 					</div>
 		<!-- /.panel-body -->
+	</div>
+	<!-- panel panel-default -->
 <!-- script -->
 		<script src="<%=basePath%>/js/jquery-2.1.0.min.js"></script>
 		<script src="<%=basePath%>/lib/bootstrap/js/bootstrap.min.js"></script>
