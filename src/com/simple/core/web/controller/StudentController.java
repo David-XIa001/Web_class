@@ -39,7 +39,26 @@ public class StudentController {
 		model.addAttribute("page", Students);
 		return "main";
 	}
-	
+	//跳转到文章界面
+	@RequestMapping("article.action")
+	public String TurnToArticle()
+	{
+		return "article";
+	}
+	//跳转到相册界面界面
+		@RequestMapping("photoAlbum.action")
+		public String TurnToPhotoAlbum()
+		{
+			return "photoAlbum";
+		}
+		/*
+		 * 跳转到留言界面
+		 * */
+		@RequestMapping("leaveMessage.action")
+		public String TurnToLeaveMessage()
+		{
+			return "leaveMessage";
+		}
 	/**
 	 * 创建学生信息
 	 */

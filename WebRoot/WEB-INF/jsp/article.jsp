@@ -22,8 +22,8 @@
 
     <!-- 引入css样式文件 -->
     <!-- Bootstrap Core CSS -->
-    <link href="./lib/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="./css/liuyan.css" rel="stylesheet" />
+    <link href="<%=basePath %>css/bootstrap.min.css" rel="stylesheet" />
+	
 
 </head>
 
@@ -36,10 +36,10 @@
             </div>
             <div>
                 <ul class="nav navbar-nav" style="font-size:16px; padding-top: 5px;">
-                    <li><a href="#">班级成员</a></li>
-                    <li><a href="#">我的文章</a></li>
-                    <li><a href="#">我的相册</a></li>
-                    <li><a href="#">留言</a></li>
+                  <li ><a href="${pageContext.request.contextPath}/list.action ">班级成员</a></li>
+					<li><a href="${pageContext.request.contextPath}/article.action">我的文章</a></li>
+					<li><a href="${pageContext.request.contextPath}/photoAlbum.action">我的相册</a></li>
+					<li><a href="${pageContext.request.contextPath}/leaveMessage.action">留言</a></li>
                 </ul>
             </div>
             <!-- 搜索框 -->
@@ -139,8 +139,8 @@
           </div>
            
     
-    <script src="./js/jquery-2.1.0.js"></script>
-    <script src="./lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="<%=basePath %>/js/jquery-2.1.0.js"></script>
+    <script src="<%=basePath %>js/bootstrap.min.js"></script>
 </body>
 
 </html>

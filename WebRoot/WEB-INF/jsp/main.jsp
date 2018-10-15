@@ -34,12 +34,12 @@
 			<div class="navbar-header">
 				<a class="navbar-brand" href="#"style="font-size:24px; padding-top:20px;color:#F08080">长琴的信息管理系统</a>
 			</div>
-			<div>
+			<div>${pageContext.request.contextPath }/logout.action
 				<ul class="nav navbar-nav" style="font-size:16px; padding-top: 5px;">
-					<li ><a href="main.jsp">班级成员</a></li>
-					<li><a href="article.jsp">我的文章</a></li>
-					<li><a href="<%=basePath%>WEB_INF/jsp/photoAlbum.jsp">我的相册</a></li>
-					<li><a href="<%=basePath%>WEB_INF/jsp/leaveMessage.jsp">留言</a></li>
+					<li ><a href="${pageContext.request.contextPath}/student/list.action ">班级成员</a></li>
+					<li><a href="${pageContext.request.contextPath}/article.action">我的文章</a></li>
+					<li><a href="${pageContext.request.contextPath}/photoAlbum.action">我的相册</a></li>
+					<li><a href="${pageContext.request.contextPath}/leaveMessage.action">留言</a></li>
 				</ul>
 			</div>
 			<!-- 搜索框 -->
